@@ -44,7 +44,7 @@ func NewAdminVdc(cli *Client) *AdminVdc {
 }
 
 // Gets a vapp with a specific url vappHREF
-func (vdc *Vdc) getVdcVAppbyHREF(vappHREF *url.URL) (*VApp, error) {
+func (vdc *Vdc) GetVdcVAppbyHREF(vappHREF *url.URL) (*VApp, error) {
 	req := vdc.client.NewRequest(map[string]string{}, "GET", *vappHREF, nil)
 	resp, err := checkResp(vdc.client.Http.Do(req))
 	if err != nil {
@@ -72,7 +72,7 @@ func (vdc *Vdc) undeployAllVdcVApps() error {
 				if err != nil {
 					return err
 				}
-				vapp, err := vdc.getVdcVAppbyHREF(vappHREF)
+				vapp, err := vdc.GetVdcVAppbyHREF(vappHREF)
 				if err != nil {
 					return fmt.Errorf("Error retrieving vapp with url: %s and with error %s", vappHREF.Path, err)
 				}
@@ -100,7 +100,7 @@ func (vdc *Vdc) removeAllVdcVApps() error {
 				if err != nil {
 					return err
 				}
-				vapp, err := vdc.getVdcVAppbyHREF(vappHREF)
+				vapp, err := vdc.GetVdcVAppbyHREF(vappHREF)
 				if err != nil {
 					return fmt.Errorf("error retrieving vapp with url: %s and with error %s", vappHREF.Path, err)
 				}

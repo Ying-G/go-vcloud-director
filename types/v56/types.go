@@ -1111,6 +1111,7 @@ type VApp struct {
 	InMaintenanceMode bool            `xml:"InMaintenanceMode,omitempty"` // True if this vApp is in maintenance mode. Prevents users from changing vApp metadata.
 	Children          *VAppChildren   `xml:"Children,omitempty"`          // Container for virtual machines included in this vApp.
 	ProductSection    *ProductSection `xml:"ProductSection,omitempty"`
+	NetworkConfigSection         *NetworkConfigSection         `xml:"NetworkConfigSection,omitempty"`
 }
 
 type ProductSectionList struct {
@@ -1263,6 +1264,7 @@ type VM struct {
 
 	VMCapabilities *VMCapabilities `xml:"VmCapabilities,omitempty"` // Allows you to specify certain capabilities of this virtual machine.
 	StorageProfile *Reference      `xml:"StorageProfile,omitempty"` // A reference to a storage profile to be used for this object. The specified storage profile must exist in the organization vDC that contains the object. If not specified, the default storage profile for the vDC is used.
+	GuestCustomizationSection    *GuestCustomizationSection    `xml:"GuestCustomizationSection,omitempty"`
 	ProductSection *ProductSection `xml:"ProductSection,omitempty"`
 }
 
