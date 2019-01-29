@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/vmware/go-vcloud-director/types/v56"
-	"github.com/vmware/go-vcloud-director/util"
+	"github.com/yingyguo/go-vcloud-director/types/v56"
+	"github.com/yingyguo/go-vcloud-director/util"
 )
 
 type CatalogItem struct {

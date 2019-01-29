@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/vmware/go-vcloud-director/util"
+	"github.com/yingyguo/go-vcloud-director/util"
 	. "gopkg.in/check.v1"
 )
 

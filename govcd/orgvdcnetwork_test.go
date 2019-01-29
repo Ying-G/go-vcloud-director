@@ -7,7 +7,7 @@ package govcd
 import (
 	"fmt"
 
-	"github.com/vmware/go-vcloud-director/types/v56"
+	"github.com/yingyguo/go-vcloud-director/types/v56"
 	. "gopkg.in/check.v1"
 )
 

@@ -15,8 +15,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/vmware/go-vcloud-director/types/v56"
-	"github.com/vmware/go-vcloud-director/util"
+	"github.com/yingyguo/go-vcloud-director/types/v56"
+	"github.com/yingyguo/go-vcloud-director/util"
 )
 
 // uploadLink - vCD created temporary upload link

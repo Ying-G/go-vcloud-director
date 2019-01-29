@@ -6,8 +6,8 @@ package govcd
 
 import (
 	"fmt"
-	"github.com/vmware/go-vcloud-director/types/v56"
-	"github.com/vmware/go-vcloud-director/util"
+	"github.com/yingyguo/go-vcloud-director/types/v56"
+	"github.com/yingyguo/go-vcloud-director/util"
 	. "gopkg.in/check.v1"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
