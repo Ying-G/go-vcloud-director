@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/Ying-G/go-vcloud-director/types/v56"
+	"github.com/yingyguo/go-vcloud-director/types/v56"
 	"github.com/vmware/go-vcloud-director/util"
 )
 
