@@ -2015,6 +2015,7 @@ type QueryResultVMRecordType struct {
 	Cpus                    int    `xml:"numberOfCpus,attr,omitempty"`
 	StorageProfileName      string `xml:"storageProfileName,attr,omitempty"`
 	NetworkName             string `xml:"networkName,attr,omitempty"`
+	IpAddress               string `xml:"ipAddress,attr,omitempty"`
 	TaskHREF                string `xml:"task,attr,omitempty"`
 	TaskStatusName          string `xml:"taskStatusName,attr,omitempty"`
 	TaskDetails             string `xml:"taskDetails,attr,omitempty"`
